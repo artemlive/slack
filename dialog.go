@@ -25,7 +25,7 @@ type DialogInput struct {
 	Name        string    `json:"name"`
 	Placeholder string    `json:"placeholder"`
 	Optional    bool      `json:"optional"`
-	Value	    bool      `json:"value"`
+	Value	    string      `json:"value"`
 }
 
 // DialogTrigger ...
