@@ -31,10 +31,12 @@ type ExternalRequest struct {
 
 //select structure
 type ExternalSelectResponse struct {
-	Options []struct {
-		Label string `json:"label"`
-		Value string `json:"value"`
-	} `json:"options"`
+	exSelectOptions []ExternalSelectOption  `json:"options"`
+}
+
+type ExternalSelectOption struct {
+	Label string `json:"label"`
+	Value string `json:"value"`
 }
 
 func ParseExternalContent(body string, opts ...slackevents.Option) (ExternalRequest, error) {
