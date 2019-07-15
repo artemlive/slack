@@ -35,7 +35,7 @@ type ExternalSelectResponse struct {
 }
 
 type ExternalSelectOption struct {
-	Label string `json:"label"`
+	Label string `json:"text"`
 	Value string `json:"value"`
 }
 
