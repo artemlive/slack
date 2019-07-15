@@ -29,6 +29,13 @@ type ExternalRequest struct {
 	Token        string `json:"token"`
 }
 
+//select structure
+type ExternalSelectResponse struct {
+	Options []struct {
+		Label string `json:"label"`
+		Value string `json:"value"`
+	} `json:"options"`
+}
 
 func ParseExternalContent(body string, opts ...slackevents.Option) (ExternalRequest, error) {
 	byteString := []byte(body)
