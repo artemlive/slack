@@ -31,7 +31,7 @@ type ExternalRequest struct {
 
 //select structure
 type ExternalSelectResponse struct {
-	exSelectOptions []ExternalSelectOption  `json:"options"`
+	ExSelectOptions []ExternalSelectOption  `json:"options"`
 }
 
 type ExternalSelectOption struct {
